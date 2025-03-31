@@ -1,11 +1,11 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-image: url('./skybackground.jpg');
+    background-image: url('./skybg.jpg'); /* Corrected filename */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Place body behind canvas */
+    z-index: -1;
 }
 
 canvas {
@@ -15,7 +15,7 @@ canvas {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0; /* Place canvas above body */
+    z-index: 0;
 }
 
 .instructions {
@@ -28,5 +28,5 @@ canvas {
     border-radius: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
-    z-index: 1; /* place instructions above canvas */
+    z-index: 1;
 }
