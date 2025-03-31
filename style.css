@@ -1,9 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-image: url('./skybg.jpg'); /* Corrected filename */
-    background-size: cover;
-    background-position: center;
+    background-color: aqua;
     background-repeat: no-repeat;
     z-index: -1;
 }
