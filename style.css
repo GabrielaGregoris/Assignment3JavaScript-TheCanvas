@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('./skybackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Ensure canvas is transparent */
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Ensures clicks register on the background too */
+}
+
+.instructions {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
