@@ -1,19 +1,21 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: url('./skybackground.jpg') no-repeat center center fixed;
+    background-image: url('./skybackground.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place body behind canvas */
 }
 
-/* Ensure canvas is transparent */
 canvas {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* Ensures clicks register on the background too */
+    z-index: 0; /* Place canvas above body */
 }
 
 .instructions {
@@ -26,4 +28,5 @@ canvas {
     border-radius: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
+    z-index: 1; /* place instructions above canvas */
 }
